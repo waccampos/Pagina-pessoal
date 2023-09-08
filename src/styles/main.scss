@@ -1,0 +1,31 @@
+@use "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: variables.$cor-back;
+}
+.container-header{
+    background-color: variables.$cor-header;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 25px;
+    .logo{
+        font-family: variables.$font-logo;
+        height: 75px;
+        text-align: center;
+        padding: 0px;
+        h2{
+            color: #FFF;
+            font-size: 35px;
+        }
+        span{
+            color: variables.$cor-azul;
+            font-size: 35px;
+        }
+    }
+    
+}
+  
