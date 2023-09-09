@@ -1,1 +1,25 @@
 @use "../../styles/variables.scss";
+
+.TitleSessao{
+    display: flex;
+    padding-top: 15px;
+    h2{
+        color: variables.$cor-azul;
+        font-family: variables.$font-name;
+        height: 70px;
+        position: relative;
+        font-weight: 00;
+        font-size: 50px;
+        
+        &::before{
+            content: "";
+            background-color: variables.$cor-azul;
+            width: 60%;
+            height: 3px;
+            bottom: 7px;
+            left: 0;
+            position: absolute;
+            
+        }
+    }
+}

@@ -15,10 +15,10 @@ export default function ButtonDownload(){
       };
 
     return(
-        <>
-        <button type="button" onClick={DownloadCurriculo}>
-            <p>baixe meu cv</p> <AiOutlineDownload size={24}/>
-        </button>
-        </>
+        <div className='container-buttondownload'>
+            <button type="button" onClick={DownloadCurriculo}>
+                <p>baixe meu cv</p> <AiOutlineDownload size={24}/>
+            </button>
+        </div>
     )
 }

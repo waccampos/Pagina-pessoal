@@ -1,7 +1,22 @@
-.botao-baixar{
-    position: absolute;
-    width: 40px;
-    right: 50%;
-    top: 60vh;
-    animation: Float 2s ease-in-out infinite ;
+@use "../../styles/variables.scss";
+.container-buttondownload{
+    button{
+        padding: 8px 15px;
+        border-radius: 20px;
+        border: 1px white solid;
+        background-color: variables.$cor-back;
+        font-size: 20px;
+        gap: 5px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.3s;
+        p{
+          text-decoration: none;   
+        }
+        &:hover{
+            box-shadow: 6px 5px 5px rgba(0, 0, 0, 0.5); 
+        }
+    }
 }

@@ -1,29 +1,17 @@
 @use "variables";
 
-*{
-    margin: 0;
-    padding: 0;
-    color: #FFF;
-    
-}
-
 .container{
     background-color: variables.$cor-back;
     height: 6000px;
 
 }
 
-.back-top{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
 .container-header{
     background-color: variables.$cor-header;
     display: flex;
     justify-content: space-between;
     padding-inline: 25px;
-
+    height: 8vh;
     .logo{
         display: flex;
         font-family: variables.$font-logo;
@@ -33,7 +21,7 @@
         h2{
             font-size: 35px;
             align-self: center;
-            
+            font-family: variables.$font-logo;
             span{
                 color: variables.$cor-azul;
             }
@@ -43,8 +31,9 @@
     
 }
 .container-intro{
+    height: 81vh;
     margin-left: 100px;
-    margin-top: 120px;
+    padding-top: 120px;
     margin-right: 120px;
     position: relative;
     .container-name{
@@ -52,7 +41,6 @@
         flex-direction: column;
         justify-content: center;
         font-family: variables.$font-name;
-        
         span{
             color: variables.$cor-azul;
         }
@@ -67,28 +55,23 @@
         display: flex;
         gap: 15px;
     }
-    button{
-        padding: 8px 15px;
-        border-radius: 20px;
-        border: 1px white solid;
-        background-color: variables.$cor-back;
-        font-size: 20px;
-        gap: 5px;
-        text-align: center;
+    .botao-baixar{
+        margin: 30vh auto;
+        width: 40px;
+        top: 60vh;
+        animation: Float 2s ease-in-out infinite ;
+    }
+    
+    
+}
+.container-sobremim{
+    background-color: variables.$cor-back-s;
+    .conteudo-sobremim{
         display: flex;
-        justify-content: center;
-        cursor: pointer;
-        transition: 0.3s;
-        p{
-          text-decoration: none;   
-        }
-        &:hover{
-            box-shadow: 6px 5px 5px rgba(0, 0, 0, 0.5); 
-        }
+        margin-right: 120px;
+        margin-left: 120px
     }
-    
-    
-    }
+}
 
 @keyframes Float{
     0% {
@@ -102,7 +85,7 @@
     }
 }
 .elemento {
-    opacity: 0;
+    display: none;
     transform: translateY(20px); 
     transition: opacity 0.3s ease, transform 0.3s ease;
     position: fixed;
@@ -111,6 +94,6 @@
   }
   
   .elemento.aparecer {
-    opacity: 1;
+    display: flex;
     transform: translateY(0);
-  }
+}
