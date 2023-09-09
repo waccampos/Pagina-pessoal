@@ -1,0 +1,19 @@
+@use "../../styles/variables.scss";
+
+.bubble{
+    margin: 25px 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px rgb(255, 255, 255) solid;
+    background-color: rgba(15, 15, 15, 0.1);
+    transform: translateX(0px);
+    transition: 0.3s;
+    &:hover {
+        transform: translatey(-6px); 
+      }
+}
+

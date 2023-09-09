@@ -3,29 +3,114 @@
 *{
     margin: 0;
     padding: 0;
+    color: #FFF;
+    
 }
+
 .container{
     background-color: variables.$cor-back;
+    height: 6000px;
+
+}
+
+.back-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
 .container-header{
     background-color: variables.$cor-header;
     display: flex;
     justify-content: space-between;
     padding-inline: 25px;
+
     .logo{
+        display: flex;
         font-family: variables.$font-logo;
         height: 75px;
-        text-align: center;
-        padding: 0px;
+        align-self: center;
+        
         h2{
-            color: #FFF;
             font-size: 35px;
+            align-self: center;
+            
+            span{
+                color: variables.$cor-azul;
+            }
         }
-        span{
-            color: variables.$cor-azul;
-            font-size: 35px;
-        }
+        
     }
     
 }
+.container-intro{
+    margin-left: 100px;
+    margin-top: 120px;
+    margin-right: 120px;
+    position: relative;
+    .container-name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: variables.$font-name;
+        
+        span{
+            color: variables.$cor-azul;
+        }
+        h1{
+            font-size: 60px;
+        }
+        h2{
+            font-size: 40px;
+        }
+    }
+    .container-bubbles{
+        display: flex;
+        gap: 15px;
+    }
+    button{
+        padding: 8px 15px;
+        border-radius: 20px;
+        border: 1px white solid;
+        background-color: variables.$cor-back;
+        font-size: 20px;
+        gap: 5px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.3s;
+        p{
+          text-decoration: none;   
+        }
+        &:hover{
+            box-shadow: 6px 5px 5px rgba(0, 0, 0, 0.5); 
+        }
+    }
+    
+    
+    }
+
+@keyframes Float{
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.elemento {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
   
+  .elemento.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+  }
