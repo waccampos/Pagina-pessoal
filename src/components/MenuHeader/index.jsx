@@ -1,5 +1,5 @@
 import './style.scss'
-export default function BotoesHeader({link1,link2,link3,link4}){
+export default function MenuHeader({link1,link2,link3,link4}){
     return(
         <nav className='menu'>
             

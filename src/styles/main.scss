@@ -74,7 +74,6 @@
 .container-sobremim{
     background-color: variables.$cor-back-s;
     .conteudo-sobremim{
-        padding-bottom: 20px;
         margin-right: 120px;
         margin-left: 120px;
         div{
@@ -88,34 +87,22 @@
             margin: 20px;
         }
     }
-    .container-barra-progresso{
-        padding-inline: 20px;
-        margin-bottom: 25px;
-    }
 }
 
 .container-skills{
-    
+    margin-right: 120px;
+    margin-left: 120px;
+    .conteudo-skills{
+        display: flex;
+    }
+    .skills{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 160px;
+        align-items: center;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -131,14 +118,6 @@
         transform: translateY(0px);
     }
 }
-
-
-
-
-
-
-
-
 
 
 

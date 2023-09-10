@@ -1,4 +1,3 @@
-import { Children } from "react"
 import "./style.scss"
 
 export default function BubbleSocial({ children, url }){

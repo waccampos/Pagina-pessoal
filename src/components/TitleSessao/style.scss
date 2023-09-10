@@ -10,7 +10,7 @@
         position: relative;
         font-weight: 00;
         font-size: 50px;
-        
+        margin-bottom: 40px;
         &::before{
             content: "";
             background-color: variables.$cor-azul;
