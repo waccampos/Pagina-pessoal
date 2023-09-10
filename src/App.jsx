@@ -7,11 +7,13 @@ import BotoesHeader from './components/buttons'
 import BubbleSocial from './components/bubble-social'
 import ButtonDownload from './components/button-download'
 import TitleSessao from './components/title-sessao'
+import BarraProgresso from './components/BarraProgresso'
 
 import { ImLinkedin2 } from "react-icons/im";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { MdOutlineMailOutline ,MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import {BsGithub, BsWhatsapp} from "react-icons/bs"
+
 
 
 export default function App() {
@@ -48,7 +50,12 @@ export default function App() {
             <h2>WCampos<span>.</span></h2>
           </div>
 
-        <BotoesHeader/>
+        <BotoesHeader 
+        link1={"#sobremim"}
+        link2={"#"}
+        link3={"#"}
+        link4={"#"}
+        />
 
       </div>
 
@@ -56,7 +63,7 @@ export default function App() {
 
         <div className='container-name' >
           <h1>Olá, Sou <span>Willams Campos</span>,<br /></h1>
-          <h2>e sou Estudante de Analise e Desenvolvimento de Sistemas.</h2>
+          <h2>e sou Estudante de Ánalise e Desenvolvimento de Sistemas.</h2>
         </div>
 
         <div className='container-bubbles'>
@@ -80,7 +87,7 @@ export default function App() {
         <div className='container-cv'>
             <ButtonDownload/>
         </div>
-        <a href="#">
+        <a href="#sobremim">
           <div className='botao-baixar'>
               <MdOutlineKeyboardDoubleArrowDown size={50}/>
           </div>
@@ -90,9 +97,25 @@ export default function App() {
 
       <div className='container-sobremim'>
         <div className='conteudo-sobremim'>
-          
+          <section id='sobremim'>
           <TitleSessao title="Sobre mim"/>
+          <br />
           
+          <div>
+            <p>
+              olá, meu nome e willams campos Sou um jovem iniciante no mercado de trabalho e amante da tecnologia, busco fazer parte de uma empresa para que eu possa contribuir e aprender cada vez mais. Tenho como objetivo aperfeiçoar minhas skills técnicas para ajudar a equipe nos trabalhos cotidianos
+            </p>
+          <div className='container-barra-progresso'>
+            <BarraProgresso 
+            link1={"#sobremim"}
+            link2={""} 
+            link3={""} 
+            link4={""} 
+            progress={1}
+            />
+            </div>
+          </div>
+          </section>
         </div>
       </div>
     </main>

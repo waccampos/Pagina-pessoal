@@ -12,6 +12,11 @@
     justify-content: space-between;
     padding-inline: 25px;
     height: 8vh;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 100;
+    margin-right: 150px;
     .logo{
         display: flex;
         font-family: variables.$font-logo;
@@ -30,10 +35,11 @@
     }
     
 }
+
 .container-intro{
     height: 81vh;
-    margin-left: 100px;
-    padding-top: 120px;
+    margin-left: 120px;
+    padding-top: 180px;
     margin-right: 120px;
     position: relative;
     .container-name{
@@ -64,14 +70,55 @@
     
     
 }
+
 .container-sobremim{
     background-color: variables.$cor-back-s;
     .conteudo-sobremim{
-        display: flex;
+        padding-bottom: 20px;
         margin-right: 120px;
-        margin-left: 120px
+        margin-left: 120px;
+        div{
+            display: flex;
+        }
+        p{
+            font-size: variables.$tamanho-font-text;
+            font-family: variables.$font-name;
+        }
+        hr{
+            margin: 20px;
+        }
+    }
+    .container-barra-progresso{
+        padding-inline: 20px;
+        margin-bottom: 25px;
     }
 }
+
+.container-skills{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes Float{
     0% {
@@ -84,6 +131,20 @@
         transform: translateY(0px);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .elemento {
     display: none;
     transform: translateY(20px); 
