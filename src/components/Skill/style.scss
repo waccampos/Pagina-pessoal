@@ -2,23 +2,34 @@
 
 .container-skill{
     width: 20%;
-    height: 250px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    height: 300px;
     font-family: variables.$font-name;
     text-align: center;
-    
+    padding: 40px;
+
     h3{
         color: variables.$cor-azul;
-       font-size: x-large;
-    }
-    p{
-        max-width: 100px;
-        text-wrap: wrap;
-        text-overflow: ellipsis; 
-        
+        font-size: x-large;
         
     }
+    .container-text{
+        word-wrap: break-word;
+        height: 100px;
+        transition: 20s ease-in-out all;
+        text-overflow: ellipsis;
+        
+        p{
+            overflow: hidden;
+            max-height: 100px;
+            text-overflow: clip;
+
+            &:hover{
+                overflow: visible;
+                background-color: linear-gradient(to bottom, black, #ffffff)
+            }
+        }
+    
+        
+    }
+    
 }

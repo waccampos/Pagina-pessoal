@@ -14,6 +14,7 @@
     transition: 0.3s;
     &:hover {
         transform: translatey(-6px); 
+        background-color: variables.$cor-back-s;
       }
 }
 

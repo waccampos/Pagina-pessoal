@@ -9,10 +9,11 @@ export default function Skill({logo,title,text}){
             <h3>
                 {title}
             </h3>
-            <p>
-                {text}
-            </p>
-            
+            <div className="container-text">
+                <p>
+                    {text}
+                </p>
+            </div>
         </div>  
     )
 }

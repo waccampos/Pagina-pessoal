@@ -9,6 +9,8 @@ import BubbleSocial from './components/BubbleSocial'
 import ButtonDownload from './components/ButtonDownload'
 import TitleSessao from './components/TitleSessao'
 import BarraProgresso from './components/BarraProgresso'
+import Skill from './components/Skill'
+import ItemPortifolio from './components/ItemPortifolio'
 
 import { ImLinkedin2 } from "react-icons/im";
 import { BiLogoReact ,BiLogoPython,BiLogoJavascript,BiLogoHtml5, BiLogoCss3} from "react-icons/bi";
@@ -16,7 +18,7 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 import { MdOutlineMailOutline ,MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import {BsGithub, BsWhatsapp} from "react-icons/bs"
 
-import Skill from './components/Skill'
+
 
 
 
@@ -134,7 +136,10 @@ export default function App() {
             <Skill
             logo={<BiLogoPython size={170}/>}
             title={"PYTHON"}
-            text="fblablablalbalblalblalssdassssssss"
+            text="
+              Usei python apenas Para back-end nessa oportunidade utilizei o framework django para fazer
+              uma api que emule um mercado.
+            "
             />
             <Skill
             logo={<BiLogoReact size={170}/>}
@@ -144,7 +149,13 @@ export default function App() {
             <Skill
             logo={<BiLogoJavascript size={170}/>}
             title={"JAVASCRIPT"}
-            text="fblablablalbalblalblalssdassssssss"
+            text={`
+            Assim como todas as outras linguagens só tive contato academico,
+            nessa linguagem trabalhei tanto o back quanto o front,
+            no back-end usei o express para fazer uma api simples 
+            ja no front-end utizizei com css,
+            html e hoje em dia utilizo com react js e react-native.
+            `}
             />
             <Skill
             logo={<BiLogoHtml5 size={170}/>}
@@ -168,11 +179,22 @@ export default function App() {
       </section>
 
       <section className='container-portifolio' id='portifolio'>
-      
+        <TitleSessao title="Portifolio" />
 
       </section>
       <section className='container-portifolio' id='contato'>
-      
+        <div className='conteudo-portifolio'>
+          <ItemPortifolio
+          />
+
+          <BarraProgresso 
+                link1="#sobremim"
+                link2="#skills"
+                link3="#portifolio"
+                link4="#contato"
+                progress={3}
+              />
+        </div>
 
       </section>
       

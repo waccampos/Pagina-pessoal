@@ -16,6 +16,7 @@
           text-decoration: none;   
         }
         &:hover{
+            background-color: variables.$cor-back-s;
             box-shadow: 6px 5px 5px rgba(0, 0, 0, 0.5); 
         }
     }
