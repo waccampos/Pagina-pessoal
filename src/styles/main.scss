@@ -9,13 +9,14 @@
 .container-header{
     background-color: variables.$cor-header;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding-inline: 25px;
     height: 8vh;
     position: fixed;
     top: 0; 
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
     margin-right: 150px;
     .logo{
         display: flex;
@@ -72,13 +73,13 @@
 }
 
 .container-sobremim{
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 50px;
     background-color: variables.$cor-back-s;
     .conteudo-sobremim{
-        margin-right: 120px;
-        margin-left: 120px;
-        div{
-            display: flex;
-        }
+        display: flex;
+
         p{
             font-size: variables.$tamanho-font-text;
             font-family: variables.$font-name;
@@ -108,10 +109,17 @@
 .container-portifolio{
     margin-right: 120px;
     margin-left: 120px;
-
+    .conteudo-portifolio{
+        display: flex ;
+        .item-portifolio{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            row-gap: 40px;
+        }
+        
+    }
 }
-
-
 
 
 @keyframes Float{
@@ -127,10 +135,6 @@
 }
 
 
-
-
-
-
 .elemento {
     display: none;
     transform: translateY(20px); 
@@ -144,3 +148,5 @@
     display: flex;
     transform: translateY(0);
 }
+
+

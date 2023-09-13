@@ -1,8 +1,48 @@
 @use "../../styles/variables.scss";
 
-.container-itemportifolio{
-    width: 400px;
-    height: 250px;
 
-    background-color: white;
+a{
+    text-decoration: none;
+}
+.container-itemportifolio {
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: variables.$cor-back-s;
+  position: relative;
+  font-family: variables.$font-name;
+  ::-webkit-scrollbar {
+    width: 5px;
+    
+  }
+  
+  .container-language{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+  }
+  
+
+  h3 {
+    padding-top: 10px;
+    padding-inline: 10px;
+    font-family: variables.$font-name;
+    color: variables.$cor-azul;
+    font-size: x-large;
+  }
+
+  p {
+    padding: 10px;
+    max-height: 130px; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    
+    &:hover{
+        overflow: auto;
+    }
+  }
+
 }

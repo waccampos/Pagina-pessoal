@@ -1,10 +1,17 @@
 @use "../../styles/variables.scss";
-
+.container-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .menu{
     align-self: center;
     color: white;
     display: inline-flex;
     padding-right: 30px;
+}
+.icon-hamburguer{
+    display: none;
 }
 .link-sessao{
     font-size: 23px;
@@ -31,6 +38,28 @@
         width: 100%;
         left: 0;
     
+    }
+}
+@media (max-width: 800px){
+    .icon-hamburguer{
+        display: flex;
+        margin: 60px;
+    }
+    .menu{
+        display: none;
+        background-color: variables.$cor-header;
+        
+    }
+    .ativado{
+        
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 70px; 
+        
+       
     }
 }
 

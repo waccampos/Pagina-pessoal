@@ -3,7 +3,6 @@ import React,{ useState, useEffect } from 'react'
 import './styles/main.scss'
 import './styles/globals.scss'
 
-
 import MenuHeader from './components/MenuHeader'
 import BubbleSocial from './components/BubbleSocial'
 import ButtonDownload from './components/ButtonDownload'
@@ -17,6 +16,7 @@ import { BiLogoReact ,BiLogoPython,BiLogoJavascript,BiLogoHtml5, BiLogoCss3} fro
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { MdOutlineMailOutline ,MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import {BsGithub, BsWhatsapp} from "react-icons/bs"
+import {SiMysql} from "react-icons/si"
 
 
 
@@ -103,14 +103,15 @@ export default function App() {
       </div>
 
       <section className='container-sobremim' id='sobremim'>
+      <TitleSessao title="Sobre mim"/>
         <div className='conteudo-sobremim'>
-          <TitleSessao title="Sobre mim"/>
-          
-          <div>
+
             <p>
               olá, meu nome e willams campos Sou um jovem iniciante no mercado de trabalho e amante da tecnologia, busco fazer parte de uma empresa para que eu possa contribuir e aprender cada vez mais. Tenho como objetivo aperfeiçoar minhas skills técnicas para ajudar a equipe nos trabalhos cotidianos
             </p>
-          <div className='container-barra-progresso'>
+          
+            
+            
             <BarraProgresso 
               link1="#sobremim"
               link2="#skills"
@@ -118,9 +119,9 @@ export default function App() {
               link4="#contato"
               progress={1}
             />
-            </div>
-          </div>
         </div>
+        
+        
       </section>
 
       <section className='container-skills' id='skills'>
@@ -129,44 +130,55 @@ export default function App() {
         <div className='conteudo-skills'>
           <div className='skills'>
             <Skill
-            logo={<BiLogoReact size={170}/>}
-            title={"REACT JS"}
-            text="fcasgg"
-            />
+              title="REACT JS"
+              text="fcasgg"
+            >
+              <BiLogoReact size={170}/>
+            </Skill>
+
             <Skill
-            logo={<BiLogoPython size={170}/>}
-            title={"PYTHON"}
-            text="
-              Usei python apenas Para back-end nessa oportunidade utilizei o framework django para fazer
-              uma api que emule um mercado.
-            "
-            />
+              title="PYTHON"
+              text="
+                Usei python apenas Para back-end nessa oportunidade utilizei o framework django para fazer
+                uma api que emule um mercado.
+              "
+            >
+              <BiLogoPython size={170}/>
+            </Skill>
+
+            <Skill 
+              title="REACT NATIVE"
+              text="fblablablalbalblalblalssdassssssss">
+              <BiLogoReact size={170}/>
+            </Skill>
+
             <Skill
-            logo={<BiLogoReact size={170}/>}
-            title={"REACT NATIVE"}
-            text="fblablablalbalblalblalssdassssssss"
-            />
+              title={"JAVASCRIPT"}
+              text="
+              Assim como todas as outras linguagens só tive contato academico,
+              nessa linguagem trabalhei tanto o back quanto o front,
+              no back-end usei o express para fazer uma api simples 
+              ja no front-end utizizei com css,
+              html e hoje em dia utilizo com react js e react-native.
+              "
+              >
+              <BiLogoJavascript size={170}/>
+            </Skill>
+
             <Skill
-            logo={<BiLogoJavascript size={170}/>}
-            title={"JAVASCRIPT"}
-            text={`
-            Assim como todas as outras linguagens só tive contato academico,
-            nessa linguagem trabalhei tanto o back quanto o front,
-            no back-end usei o express para fazer uma api simples 
-            ja no front-end utizizei com css,
-            html e hoje em dia utilizo com react js e react-native.
-            `}
-            />
+              title={"HTML"}
+              text="fblablablalbalblalblalssdassssssss"
+              >
+              <BiLogoHtml5 size={170}/>
+            </Skill>
+
             <Skill
-            logo={<BiLogoHtml5 size={170}/>}
-            title={"HTML"}
-            text="fblablablalbalblalblalssdassssssss"
-            />
-            <Skill
-            logo={<BiLogoCss3 size={170}/>}
-            title={"CSS"}
-            text="fblablablalbalblalblalssdassssssss"
-            />
+              title={"CSS"}
+              text="fblablablalbalblalblalssdassssssss"
+              >
+              <BiLogoCss3 size={170}/>
+            </Skill>
+
           </div>
             <BarraProgresso 
               link1="#sobremim"
@@ -184,9 +196,63 @@ export default function App() {
       </section>
       <section className='container-portifolio' id='contato'>
         <div className='conteudo-portifolio'>
+        <div className="item-portifolio">
           <ItemPortifolio
-          />
+          link={"https://github.com/waccampos/api-em-py"}
+            title={"Api django"}
+            text={"okdfos akdoaskd okassdddddd ddd dddddd ddddd sddddd dddd dddddddddd dddd dddddd dddddddd dddddd ddddd ddddd dddd dd dddddd ddddddd ddd dddddddd dddddddd sdddddddd dddd ddddd d ddddddddd asdsad asd asd as das dasd sa dasdsadasd sad asdsadsad sadasds adasdsssssssssss sdaaaaaaaaaa"}
+          >
+            <BiLogoPython size={30}/>
+          </ItemPortifolio>
 
+          <ItemPortifolio
+          link={"https://github.com/waccampos/app-tarefas-mobile-fullstack"}
+            title={"Pagina pessoal"}
+            text={"okdfos akdoaskd okassdddddd ddd dddddd ddddd sddddd dddd dddddddddd dddd dddddd dddddddd dddddd ddddd ddddd dddd dd dddddd ddddddd ddd dddddddd dddddddd sdddddddd dddd ddddd d ddddddddd asdsad asd asd as das dasd sa dasdsadasd sad asdsadsad sadasds adasdsssssssssss sdaaaaaaaaaa"}
+          >
+            <BiLogoReact size={30}/>
+            
+          </ItemPortifolio>
+          
+          <ItemPortifolio
+          link={"https://github.com/waccampos/app-tarefas-mobile-fullstack"}
+            title={"projeto mobile fullstack"}
+            text={"consiste em um app que ajude a melhorar seu dia a dia. O app conta com uma tela para marcar compromissos na agenda do próprio app. Em outra tela, existe um bloco de notas para salvar o texto digitado no banco de dados. a segunda parte do app ainda esta sendo cuntruida que e a parte de integração com chat gpt."}
+          >
+            <BiLogoReact size={30}/>
+            <BiLogoJavascript size={30}/>
+            <SiMysql size={30}/>
+          </ItemPortifolio>
+
+          <ItemPortifolio
+          link={"#"}
+            title={"pagina pessoal"}
+            text={"okdfos akdoaskd okassdddddd ddd dddddd ddddd sddddd dddd dddddddddd dddd dddddd dddddddd dddddd ddddd ddddd dddd dd dddddd ddddddd ddd dddddddd dddddddd sdddddddd dddd ddddd d ddddddddd asdsad asd asd as das dasd sa dasdsadasd sad asdsadsad sadasds adasdsssssssssss sdaaaaaaaaaa"}
+          >
+            <BiLogoReact size={30}/>
+            <BiLogoJavascript size={30}/>
+            <SiMysql size={30}/>
+          </ItemPortifolio>
+
+          <ItemPortifolio
+          link={"#"}
+            title={"click pointer"}
+            text={"Este projeto é uma solução para o desafio onde o objetivo é criar uma aplicação que permite ao usuário adicionar círculos clicando em qualquer lugar da página, com as funcionalidades de desfazer (undo) e refazer (redo)."}
+          >
+            <BiLogoReact size={30}/>
+            
+          </ItemPortifolio>
+
+          <ItemPortifolio
+          link={"#"}
+            title={"pagina pessoal"}
+            text={"okdfos akdoaskd okassdddddd ddd dddddd ddddd sddddd dddd dddddddddd dddd dddddd dddddddd dddddd ddddd ddddd dddd dd dddddd ddddddd ddd dddddddd dddddddd sdddddddd dddd ddddd d ddddddddd asdsad asd asd as das dasd sa dasdsadasd sad asdsadsad sadasds adasdsssssssssss sdaaaaaaaaaa"}
+          >
+            <BiLogoReact size={30}/>
+            <BiLogoJavascript size={30}/>
+            <SiMysql size={30}/>
+          </ItemPortifolio>
+          </div>
           <BarraProgresso 
                 link1="#sobremim"
                 link2="#skills"

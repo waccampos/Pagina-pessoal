@@ -1,33 +1,41 @@
 @use "../../styles/variables.scss";
 
-.container-barra-progresso{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-inline: 20px;
-    margin-bottom: 25px;
-    margin-left: 30px;
-    .bola-progresso{
-        background-color: variables.$cor-azul;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        border: 2.5px solid variables.$cor-azul; 
-        
-    }
+.container-barra-progresso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 20px;
+  margin-bottom: 25px;
+  margin-left: 30px;
 
-    .selected {
-        background-color: transparent;
-        
-    }
+  .bola-progresso {
+    background-color: variables.$cor-azul;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2.5px solid variables.$cor-azul;
+  }
 
-    .stick-progresso{
-        margin-top: -2px;
-        margin-bottom: -2px;
-        background-color: variables.$cor-azul;
-        width: 6px;
-        height: 60px;
-        border: 1.5px solid variables.$cor-azul; 
+  .selected {
+    background-color: transparent;
+  }
+
+  .stick-progresso {
+    margin-top: -2px;
+    margin-bottom: -2px;
+    background-color: variables.$cor-azul;
+    width: 6px;
+    height: 60px;
+    border: 1.5px solid variables.$cor-azul;
+  }
+}
+
+
+  
+@media (max-width: 900px) {
+    .container-barra-progresso {
+      display: none;
     }
+    
 }

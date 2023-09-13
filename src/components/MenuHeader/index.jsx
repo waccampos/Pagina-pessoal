@@ -1,27 +1,42 @@
-import './style.scss'
-export default function MenuHeader({link1,link2,link3,link4}){
-    return(
-        <nav className='menu'>
-            
-            <a href="#" className='link-sessao'>
-                Home 
-            </a>
+import React, { useState } from 'react';
+import './style.scss';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
-            <a href={link1} className='link-sessao'>
-                Sobre mim
-            </a>
+export default function MenuHeader({ link1, link2, link3, link4 }) {
+  const [ativado, setAtivado] = useState(false);
 
-            <a href={link2} className='link-sessao'>
-                Skills
-            </a>
 
-            <a href={link3} className='link-sessao'>
-                Portifolio
-            </a>
+  return (
+    <div className="container-menu">
+      <GiHamburgerMenu
+        size={30}
+        className="icon-hamburguer"
+        onClick={() => {
+            setAtivado(!ativado)}}
+      />
 
-            <a href={link4} className='link-sessao'>
-                Contato
-            </a>
-        </nav>
-    )
+      <nav className={`menu ${ativado ? '' : 'ativado'}`}>
+        <a href="#" className="link-sessao" onClick={() => {
+            setAtivado(!ativado)}}>
+          Home
+        </a>
+        <a href={link1} className="link-sessao" onClick={() => {
+            setAtivado(!ativado)}}>
+          Sobre mim
+        </a>
+        <a href={link2} className="link-sessao" onClick={() => {
+            setAtivado(!ativado)}}>
+          Skills
+        </a>
+        <a href={link3} className="link-sessao" onClick={() => {
+            setAtivado(!ativado)}}>
+          Portifolio
+        </a>
+        <a href={link4} className="link-sessao" onClick={() => {
+            setAtivado(!ativado)}}>
+          Contato
+        </a>
+      </nav>
+    </div>
+  );
 }

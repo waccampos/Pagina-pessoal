@@ -1,10 +1,11 @@
+
 import './style.scss'
 
-export default function Skill({logo,title,text}){
+export default function Skill({title,text,children}){
     return(
         <div className="container-skill">
             <div>
-                {logo}
+                {children}
             </div>
             <h3>
                 {title}
