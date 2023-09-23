@@ -3,9 +3,11 @@ import './style.scss';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 export default function MenuHeader({ link1, link2, link3, link4 }) {
-  const [ativado, setAtivado] = useState(false);
+  const [ativado, setAtivado] = useState(true);
 
-
+  const clickFora = (e) => {
+    
+  }
   return (
     <div className="container-menu">
       <GiHamburgerMenu

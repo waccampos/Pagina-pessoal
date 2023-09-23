@@ -1,11 +1,11 @@
 import './style.scss'
 
-export default function TitleSessao({title}){
+export default function TitleSessao({title,id}){
     return(
-        <div className='TitleSessao'>
+        <section className='TitleSessao' id={id}>
             <h2>
                 {title}
             </h2>
-        </div>
+        </section>
     )
 }

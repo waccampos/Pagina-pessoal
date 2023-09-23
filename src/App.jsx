@@ -10,13 +10,14 @@ import TitleSessao from './components/TitleSessao'
 import BarraProgresso from './components/BarraProgresso'
 import Skill from './components/Skill'
 import ItemPortifolio from './components/ItemPortifolio'
+import ContatoEmail from './components/ContatoEmail'
 
 import { ImLinkedin2 } from "react-icons/im";
 import { BiLogoReact ,BiLogoPython,BiLogoJavascript,BiLogoHtml5, BiLogoCss3} from "react-icons/bi";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { MdOutlineMailOutline ,MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import {BsGithub, BsWhatsapp} from "react-icons/bs"
-import {SiMysql} from "react-icons/si"
+import {SiMysql,SiSqlite} from "react-icons/si"
 
 
 
@@ -124,10 +125,10 @@ export default function App() {
         
       </section>
 
-      <section className='container-skills' id='skills'>
-        <TitleSessao title="Skills" />
+      
+        <TitleSessao title="Skills" id='skills'/>
+        <section className='container-skills'>
         
-        <div className='conteudo-skills'>
           <div className='skills'>
             <Skill
               title="REACT JS"
@@ -187,15 +188,12 @@ export default function App() {
               link4="#contato"
               progress={2}
             />
-        </div>
+        
       </section>
 
-      <section className='container-portifolio' id='portifolio'>
-        <TitleSessao title="Portifolio" />
 
-      </section>
-      <section className='container-portifolio' id='contato'>
-        <div className='conteudo-portifolio'>
+      <TitleSessao title="Portifolio" id="portifolio"/>
+      <section className='container-portifolio'  style={{}}>
         <div className="item-portifolio">
           <ItemPortifolio
           link={"https://github.com/waccampos/api-em-py"}
@@ -203,6 +201,7 @@ export default function App() {
             text={"okdfos akdoaskd okassdddddd ddd dddddd ddddd sddddd dddd dddddddddd dddd dddddd dddddddd dddddd ddddd ddddd dddd dd dddddd ddddddd ddd dddddddd dddddddd sdddddddd dddd ddddd d ddddddddd asdsad asd asd as das dasd sa dasdsadasd sad asdsadsad sadasds adasdsssssssssss sdaaaaaaaaaa"}
           >
             <BiLogoPython size={30}/>
+            <SiSqlite size={30}/>
           </ItemPortifolio>
 
           <ItemPortifolio
@@ -253,6 +252,7 @@ export default function App() {
             <SiMysql size={30}/>
           </ItemPortifolio>
           </div>
+
           <BarraProgresso 
                 link1="#sobremim"
                 link2="#skills"
@@ -260,8 +260,23 @@ export default function App() {
                 link4="#contato"
                 progress={3}
               />
-        </div>
+        
+      </section>
 
+      <TitleSessao title="Contato"/>
+      <section className='container-contato' id='contato'>
+        <div></div>
+        
+        <ContatoEmail/>
+
+        <BarraProgresso
+          link1="#sobremim"
+          link2="#skills"
+          link3="#portifolio"
+          link4="#contato"
+          progress={4}
+        
+        />
       </section>
       
 

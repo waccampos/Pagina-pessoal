@@ -2,8 +2,6 @@
 
 .container{
     background-color: variables.$cor-back;
-    height: 6000px;
-    
 }
 
 .container-header{
@@ -73,11 +71,12 @@
 }
 
 .container-sobremim{
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 50px;
+    
     background-color: variables.$cor-back-s;
     .conteudo-sobremim{
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-bottom: 50px;
         display: flex;
 
         p{
@@ -93,32 +92,40 @@
 .container-skills{
     margin-right: 120px;
     margin-left: 120px;
-    .conteudo-skills{
-        display: flex;
-    }
+    padding-bottom: 50px;
+    display: flex;
+    
     .skills{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 20px;
         justify-content: space-evenly;
 
     }
 }
 
 .container-portifolio{
+    display: flex ;
     margin-right: 120px;
     margin-left: 120px;
-    .conteudo-portifolio{
-        display: flex ;
-        .item-portifolio{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            row-gap: 40px;
-        }
-        
+    padding-bottom: 50px;
+    .item-portifolio{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 40px;
     }
+        
+    
+}
+
+.container-contato{
+    margin-right: 120px;
+    margin-left: 120px;
+    display: flex;
+    padding-bottom: 40px;
+    justify-content: space-between;
 }
 
 
