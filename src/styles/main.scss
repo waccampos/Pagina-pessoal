@@ -74,17 +74,14 @@
     
     background-color: variables.$cor-back-s;
     .conteudo-sobremim{
-        padding-left: 120px;
-        padding-right: 120px;
+        margin-left: 120px;
+        margin-right: 120px;
         padding-bottom: 50px;
         display: flex;
 
         p{
             font-size: variables.$tamanho-font-text;
             font-family: variables.$font-name;
-        }
-        hr{
-            margin: 20px;
         }
     }
 }
@@ -112,7 +109,9 @@
     padding-bottom: 50px;
     .item-portifolio{
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+        gap: 20px;
         justify-content: space-evenly;
         row-gap: 40px;
     }
@@ -156,4 +155,22 @@
     transform: translateY(0);
 }
 
-
+@media (max-width:800px) {
+    .container-intro{
+        padding-top: 70px;
+        .container-name{
+            h1{
+                font-size: 45px;
+            }
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+    
+    .container-intro,.container-sobremim .conteudo-sobremim,.container-skills,.container-portifolio,.container-contato{
+                margin: 10px
+            }
+    
+         
+}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style.scss';
 import StyledInput from './Input.Style';
-import axios, { Axios } from 'axios';
+import axios from 'axios';
 
 export default function ContatoEmail() {
   const [name, setName] = useState('');
@@ -12,7 +12,7 @@ export default function ContatoEmail() {
   function sendEmail(e){
     e.preventDefault();
 
-    var data = {
+    const data = {
       service_id: import.meta.env.VITE_ID_EMAILJS,
       template_id: import.meta.env.VITE_TEMPLATEID_EMAILJS,
       user_id: import.meta.env.VITE_PUBLIC_KEY_EMAILJS,
@@ -35,18 +35,20 @@ export default function ContatoEmail() {
     }
     
     axios.post("https://api.emailjs.com/api/v1.0/email/send", data)
-  .then((response) => {
-    setName('');
-    setEmail('');
-    setAssunto('');
-    setConteudo('');
-    console.log(response.status)
+  .then(() => {
     alert('Seu email foi enviado!');
   })
   .catch((error) => {
     console.error(error);
     console.log(response.status)
-  });
+  }).finally(() =>{
+    setName('');
+    setEmail('');
+    setAssunto('');
+    setConteudo('');
+  })
+  
+  ;
 
 
 }
@@ -92,7 +94,7 @@ export default function ContatoEmail() {
         <div className="botoes-form">
           <button type="submit">enviar</button>
 
-          <button type="reset" onClick={(e) => {
+          <button type="reset" onClick={() => {
             setEmail('');
             setAssunto('');
             setName('');

@@ -4,7 +4,8 @@ import "../TitleSessao"
 
 export default function ItemPortifolio({title,text,link,children}){
     return(
-        <a href={link}>
+        
+        <a href={link} target="_blank" style={{display:"flex"}}>
             <div className="container-itemportifolio">
                 <h3>{title}</h3>
                 <p>{text}</p>
@@ -13,5 +14,6 @@ export default function ItemPortifolio({title,text,link,children}){
                 </div>
             </div>
         </a>
+       
     )
 }

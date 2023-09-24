@@ -6,14 +6,12 @@ const StyledInput = styled.input`
         font-weight:bold;
     }
     color: black;
-    font-family: "Roboto", sans-serif;
+    font-weight:600;
     outline: 0;
-    background: #cecece;
     width: 99%;
     border: 0;
-    padding: 12px;
+    padding: 8px;
     font-size: 15px;
-
 `
 
 

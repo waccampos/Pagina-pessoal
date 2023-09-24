@@ -198,16 +198,16 @@ export default function App() {
           <ItemPortifolio
           link={"https://github.com/waccampos/api-em-py"}
             title={"Api django"}
-            text={"okdfos akdoaskd okassdddddd ddd dddddd ddddd sddddd dddd dddddddddd dddd dddddd dddddddd dddddd ddddd ddddd dddd dd dddddd ddddddd ddd dddddddd dddddddd sdddddddd dddd ddddd d ddddddddd asdsad asd asd as das dasd sa dasdsadasd sad asdsadsad sadasds adasdsssssssssss sdaaaaaaaaaa"}
+            text={"Este é um projeto de API desenvolvido em Python usando o framework Django para gestão de estoque. A API permite cadastrar, atualizar, excluir e listar produtos em estoque, além de realizar vendas e compras. Também inclui funcionalidades de cadastro e autenticação de usuários e funcionários, bem como controle de folha de ponto."}
           >
             <BiLogoPython size={30}/>
             <SiSqlite size={30}/>
           </ItemPortifolio>
 
           <ItemPortifolio
-          link={"https://github.com/waccampos/app-tarefas-mobile-fullstack"}
+          link={"https://github.com/waccampos/Pagina-pessoal"}
             title={"Pagina pessoal"}
-            text={"okdfos akdoaskd okassdddddd ddd dddddd ddddd sddddd dddd dddddddddd dddd dddddd dddddddd dddddd ddddd ddddd dddd dd dddddd ddddddd ddd dddddddd dddddddd sdddddddd dddd ddddd d ddddddddd asdsad asd asd as das dasd sa dasdsadasd sad asdsadsad sadasds adasdsssssssssss sdaaaaaaaaaa"}
+            text={"Este é um projeto React que representa minha página pessoal e profissional. Aqui você encontrará informações sobre mim, meu portfólio e como entrar em contato."}
           >
             <BiLogoReact size={30}/>
             
@@ -224,17 +224,7 @@ export default function App() {
           </ItemPortifolio>
 
           <ItemPortifolio
-          link={"#"}
-            title={"pagina pessoal"}
-            text={"okdfos akdoaskd okassdddddd ddd dddddd ddddd sddddd dddd dddddddddd dddd dddddd dddddddd dddddd ddddd ddddd dddd dd dddddd ddddddd ddd dddddddd dddddddd sdddddddd dddd ddddd d ddddddddd asdsad asd asd as das dasd sa dasdsadasd sad asdsadsad sadasds adasdsssssssssss sdaaaaaaaaaa"}
-          >
-            <BiLogoReact size={30}/>
-            <BiLogoJavascript size={30}/>
-            <SiMysql size={30}/>
-          </ItemPortifolio>
-
-          <ItemPortifolio
-          link={"#"}
+          link={"https://github.com/waccampos/click-point"}
             title={"click pointer"}
             text={"Este projeto é uma solução para o desafio onde o objetivo é criar uma aplicação que permite ao usuário adicionar círculos clicando em qualquer lugar da página, com as funcionalidades de desfazer (undo) e refazer (redo)."}
           >
@@ -243,9 +233,17 @@ export default function App() {
           </ItemPortifolio>
 
           <ItemPortifolio
-          link={"#"}
-            title={"pagina pessoal"}
-            text={"okdfos akdoaskd okassdddddd ddd dddddd ddddd sddddd dddd dddddddddd dddd dddddd dddddddd dddddd ddddd ddddd dddd dd dddddd ddddddd ddd dddddddd dddddddd sdddddddd dddd ddddd d ddddddddd asdsad asd asd as das dasd sa dasdsadasd sad asdsadsad sadasds adasdsssssssssss sdaaaaaaaaaa"}
+            title={"em breve"}
+            text={"----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"}
+          >
+            <BiLogoReact size={30}/>
+            <BiLogoJavascript size={30}/>
+            <SiMysql size={30}/>
+          </ItemPortifolio>
+
+          <ItemPortifolio
+            title={"em breve"}
+            text={"----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"}
           >
             <BiLogoReact size={30}/>
             <BiLogoJavascript size={30}/>

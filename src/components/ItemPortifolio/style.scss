@@ -46,3 +46,15 @@ a{
   }
 
 }
+@media (max-width:800px) {
+  
+  .container-itemportifolio {
+    width: 450px;
+  }
+}
+@media (max-width:400px) {
+  
+  .container-itemportifolio {
+    width: 350px;
+  }
+}
