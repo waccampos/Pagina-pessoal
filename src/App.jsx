@@ -132,7 +132,7 @@ export default function App() {
           <div className='skills'>
             <Skill
               title="REACT JS"
-              text="fcasgg"
+              text="utilizei o react na criação de dois projetos o click-pointer e a minha pagina pessoal e a tecnologia que mais estou estudando no momento"
             >
               <BiLogoReact size={170}/>
             </Skill>
@@ -140,8 +140,8 @@ export default function App() {
             <Skill
               title="PYTHON"
               text="
-                Usei python apenas Para back-end nessa oportunidade utilizei o framework django para fazer
-                uma api que emule um mercado.
+                Utilizei Python exclusivamente para o desenvolvimento do back-end, 
+                onde empreguei o framework Django para criar uma API para um mercado ficticio.
               "
             >
               <BiLogoPython size={170}/>
@@ -149,33 +149,39 @@ export default function App() {
 
             <Skill 
               title="REACT NATIVE"
-              text="fblablablalbalblalblalssdassssssss">
+              text="
+                Utilizei o React Native para criar um aplicativo de lista de afazeres que consumiu uma API também criada por mim em JavaScript.
+              ">
               <BiLogoReact size={170}/>
             </Skill>
 
             <Skill
               title={"JAVASCRIPT"}
               text="
-              Assim como todas as outras linguagens só tive contato academico,
-              nessa linguagem trabalhei tanto o back quanto o front,
-              no back-end usei o express para fazer uma api simples 
-              ja no front-end utizizei com css,
-              html e hoje em dia utilizo com react js e react-native.
-              "
+                Assim como todas as outras linguagens, tive contato principalmente em contextos acadêmicos. 
+                Nessa linguagem, trabalhei em ambas as camadas, tanto no back-end com o Express para criar uma API simples, 
+                quanto no front-end com HTML e CSS. Atualmente, estou utilizando com React.js e React Native.
+                "
               >
               <BiLogoJavascript size={170}/>
             </Skill>
 
             <Skill
-              title={"HTML"}
-              text="fblablablalbalblalblalssdassssssss"
-              >
+              title="HTML"
+              text="
+              Experiência sólida em criar estruturas acessíveis e semânticas com HTML,
+              com foco em layouts responsivos. Buscando constantemente melhorias nas habilidades HTML."
+            >
               <BiLogoHtml5 size={170}/>
             </Skill>
 
+
             <Skill
               title={"CSS"}
-              text="fblablablalbalblalblalssdassssssss"
+              text="
+              Ampla experiência em aplicar estilos, incluindo cores, fontes e posicionamento de elementos, para criar designs atraentes e responsivos. 
+              Atualmente, também estou estudando SCSS para expandir ainda mais minhas habilidades.
+              "
               >
               <BiLogoCss3 size={170}/>
             </Skill>
