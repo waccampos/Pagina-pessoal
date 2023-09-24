@@ -108,7 +108,7 @@ export default function App() {
         <div className='conteudo-sobremim'>
 
             <p>
-              olá, meu nome e willams campos Sou um jovem iniciante no mercado de trabalho e amante da tecnologia, busco fazer parte de uma empresa para que eu possa contribuir e aprender cada vez mais. Tenho como objetivo aperfeiçoar minhas skills técnicas para ajudar a equipe nos trabalhos cotidianos
+              Olá meu nome e Willams Campos e Sou um jovem entusiasta da tecnologia em busca de oportunidades para contribuir e aprender no mundo profissional. Minha paixão pela tecnologia me motiva a enfrentar desafios e aprimorar minhas habilidades constantemente. Sou colaborativo, dedicado a trabalhar em equipe e estou sempre disposto a superar expectativas. Acredito que o aprendizado contínuo e a disposição para compartilhar conhecimento são fundamentais para o crescimento na área de tecnologia. Estou ansioso para fazer a diferença e crescer profissionalmente.
             </p>
           
             
